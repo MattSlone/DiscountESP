@@ -1,0 +1,9 @@
+.very-top {
+  width: 100%;
+  
+  @media screen and (width >= 740px) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+}

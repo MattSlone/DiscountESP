@@ -1,0 +1,33 @@
+body > section.main {
+
+  .cards {
+
+    .card {
+      padding: .5em;
+      background: white;
+      border-radius: .5em;
+
+      h2 {
+        margin: 0 0 .25em 0;
+      }
+
+    }
+
+  }
+
+  .restrictions {
+    padding: 1em;
+    background: white;
+    color: black;
+    font-size: 1.25em;
+  }
+
+  @media screen and (width >= 740px) {
+    
+    .cards .card {
+      box-shadow: 4px 4px 5px 0px rgba(138,138,138,1);
+    }
+
+  }
+
+}

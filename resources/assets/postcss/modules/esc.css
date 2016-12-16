@@ -1,0 +1,75 @@
+body section.esc {
+
+  .main, .links, .options {
+    border-radius: .5em;
+  }
+
+  .main {
+    background: white;
+    border: 2px solid black;
+
+    .intro {
+      text-align: center;
+    }
+
+    .features {
+      list-style-type: none;
+    }
+
+  }
+
+  .sidebar {
+
+    .links, .options {
+      background: white;
+      border: 2px solid black;
+
+      ul {
+        list-style-type: none;
+      }
+
+      & > span {
+        font-size: 1.25em;
+        text-align: center;
+      }
+
+    }
+
+    .options {
+
+      li {
+
+        section {
+
+          .msrp {
+            text-decoration: line-through;
+          }
+
+        }
+
+      }
+
+    }
+
+    .links {
+
+      button {
+        background-color: $yellow;
+      }
+
+      a button {
+        background-color: white;
+      }
+
+    }
+
+  }
+
+  @media screen and (width >= 740px) {
+    .main, .sidebar .links, .sidebar .options {
+      box-shadow: 4px 4px 5px 0px rgba(138,138,138,1);
+    }
+
+  }
+
+}

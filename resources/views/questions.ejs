@@ -1,0 +1,245 @@
+<% include partials/head %>
+<section class="questions">
+  <div class="instructions">
+    <h2>
+      Contact Us
+    </h2>
+    <span>
+      Inquiries are answered within 1 business day. Thank you in advance for
+      your interest and we are looking forward to assisting you with your
+      Extended Service Contract enrollment.
+    </span>
+    <ul>
+      <li>Tel: 608-314-1722</li>
+      <li>Fax: 888-322-2090</li>
+      <li>jim@discountesp.com</li>
+    </ul>
+  </div>
+  <form name="questions" action="/questions" method="post">
+    <h2>Questions Form</h2>
+    <div>
+      <div class="field">
+        <label>Name:</label>
+        <input id="name" type="text" name="name">
+      </div>
+      <div class="field">
+        <label>Phone:</label>
+        <input type="text" name="phone">
+      </div>
+      <div class="field">
+        <label>Email:</label>
+        <input type="text" name="email">
+      </div>
+    </div>
+    <div class="field">
+      <label>Message:</label>
+      <textarea resize="none" name="message" placeholder="Type your message here."></textarea>
+    </div>
+    <span class="validation">
+      <%= (errors) ? errors : '' %>
+    </span>
+    <input type="submit" name="submit" value="Submit">
+  </form>
+</section>
+<section class="faq">
+  <h1>Frequently Asked Questions</h1>
+  <ul class="left">
+    <li>
+      <h2 class="faq1">Is this Harley-Davidson’s Official Extended Service Plan?</h2>
+      <div>
+        <p>Harley-Davidson will not allow dealers to sell the CNA administered
+          ESP outside of their local dealership. This plan is administered by
+          CornerStone United, which provides excellent coverage and top notch
+          customer service. Where Harley Davidson chose CNA to administer
+          their ESP; Suzuki &amp; Arctic Cat chose CornerStone United.
+        </p>
+      </div>
+    </li>
+    <li>
+      <h2 class="faq3">What is covered on the Extended Service Contract?</h2>
+      <div>
+        <p>
+          All components / parts covered under the Harley-Davidson Factory
+          Warranty are covered. The plan was built around coverage instead of
+          exclusions. Page 2 of the contract lists the few exclusions.
+        </p>
+      </div>
+    </li>
+    <li>
+      <h2 class="faq5">How are Claims Made?</h2>
+      <div>
+        <p>
+          In the event of a claim, the process is very easy.
+        </p>
+        <ol>
+          <li>
+            Bring your Harley to any Authorized Dealership or State Licensed Repair Facility.
+          </li>
+          <li>
+            Show your contract or ID card to the Service Writer.
+          </li>
+          <li>
+            The Repair Facility or You must call the Administrator at
+            1-866-912-2768 to obtain a Claim Authorization Number. If after
+            hours, Repair Facility must call during the next business day.
+          </li>
+        </ol>
+        <p>
+          The service center is paid over the phone with a credit card. If this
+          is not possible, you can pay and be reimbursed for a covered repair
+          directly via a check.
+        </p>
+      </div>
+    </li>
+    <li>
+      <h2 class="faq7">Is my Motorcycle eligible?</h2>
+      <div>
+        <p>
+          Your motorcycle must be covered under the Harley-Davidson Factory
+          Warranty. We are not able to enroll customers who reside in
+          Florida, California or Oregon.
+        </p>
+        <p>
+          If your motorcycle is outside of the factory warranty, however
+          currently covered under an Extended Service Plan, contact me for
+          your options.
+        </p>
+      </div>
+    </li>
+    <li>
+      <h2 class="faq9">Can the contract be transferred if I sell prior to expiration?</h2>
+      <div>
+        <p>
+          Yes! Any remaining coverage can be transferred during a private
+          party sale. This can help increase the value of your bike. The
+          Service Contract can also be cancelled for a refund in the event of
+          a loss, trade-in, or customer request.
+        </p>
+      </div>
+    </li>
+    <li>
+      <h2 class="faq11">How do I purchase the tire &amp; wheel coverage?</h2>
+      <div>
+        <p>
+          The tire and wheel coverage is a stand-alone contract. Meaning you
+          can buy it separately. The enrollment process is the same. This
+          coverage considerably increases your bike’s value. Yes the tire and
+          wheel contract can be transferred during a private party sale.
+        </p>
+      </div>
+    </li>
+    <li>
+      <h2 class="faq13">What is the deductible for claims?</h2>
+      <div>
+        <p>
+          There is no deductible! $0 for any covered claim. This is the same
+          for repairs completed at any Harley-Davidson Dealership as well as
+          any State Licensed Repair Shop.
+        </p>
+      </div>
+    </li>
+    <li>
+      <h2 class="faq15">Do I have to complete every field on the application?</h2>
+      <div>
+        <p>
+          After you receive the electronic contract via Adobe EchoSign, you
+          only have to complete the fields marked required with red asterik.
+          The important fields are: Street Address, VIN, Currently Mileage and
+          desired term.
+        </p>
+      </div>
+    </li>
+  </ul>
+  <ul class="right">
+    <li>
+      <h2 class="faq2">Why don’t you sell the CNA administered plan anymore?</h2>
+      <div>
+        <p>
+          Harley-Davidson no longer allows dealers to sell the CNA administered
+          plan online or outside of their dealership. This mandate turned out to
+          be good news. The plans we offer now, in my opinion, are a great
+          package for riders. The coverage is for all parts covered under the
+          factory warranty, a $0 deductible, and repairs can be done at ANY
+          Harley-Davidson Dealership or State Licensed Repair Shop.
+        </p>
+      </div>
+    </li>
+    <li>
+      <h2 class="faq4">How does this plan compare against Harley-Davidson’s CNA administered plan?</h2>
+      <div>
+        <p>
+          This CornerStone United administered plan covers all the components
+          and parts as the Harley-Davidson Manufacturer Warranty. Plus the
+          deductible is always $0. Harley-Davidson will charge a $50 deductible
+          at a H-D Dealership and a $100 deductible at a non H-D Dealership.
+          It doesn’t matter where you get your repairs, as long as it is a
+          State Licensed Repair Shop, the deductible is $0!
+        </p>
+      </div>
+    </li>
+    <li >
+      <h2 class="faq6">Can I buy the plan from you, even though I live
+        elsewhere?
+      </h2>
+      <div>
+        <p>
+          Yes, we can enroll your eligible Motorcycle as long as you don't live
+          in Florida, California or Oregon. Enrollment is electronic via email
+          (Adobe EchoSign) and telephone.
+        </p>
+      </div>
+    </li>
+    <li>
+      <h2 class="faq8">When does the extended coverage start?</h2>
+      <div>
+        <p>
+          The factory warranty coverage begins the day you purchase the
+          motorcycle. The Extended Service Contract adds to the coverage and
+          extends by an additional 1 to 5 years. Example: 36mo contract will
+          cover the bike for an ADDITIONAL 3 years.
+        </p>
+      </div>
+    </li>
+    <li>
+      <h2 class="faq10">Will my local dealer know that I purchased coverage?</h2>
+      <div>
+        <p>
+          When you bring your bike in for service or repairs, you will show
+          your membership card to the service writer. This will notify them of
+          your coverage. From there the Service Department will be able to
+          begin the claims process if needed.
+        </p>
+      </div>
+    </li>
+    <li>
+      <h2 class="faq12">Are there any additional fees or taxes?</h2>
+      <div>
+        <p>
+          No. Unless you are a resident of Wisconsin, I don’t collect sales
+          tax. Also there are no hidden fees or shipping charges.
+        </p>
+      </div>
+    </li>
+    <li>
+      <h2 class="faq14">What if I don’t have access to a fax machine?</h2>
+      <div>
+        <p>
+          Enrollment is completed electronically and won’t require fax or a
+          scanner. If all else fails, we can process the enrollment via snail
+          mail.
+        </p>
+      </div>
+    </li>
+    <li>
+      <h2 class="faq16">Can I contact you with more questions?</h2>
+      <div>
+        <p>
+          Please do. The best way to get your questions answered is via email.
+          (finance@boardtrackerhd.com). Feel free to email me or utilize the
+          contact form on the enrollment page.
+        </p>
+      </div>
+    </li>
+  </ul>
+</section>
+<% include partials/footer %>

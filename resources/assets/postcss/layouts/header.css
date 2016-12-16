@@ -1,0 +1,65 @@
+header {
+  margin-top: 48px;
+  display: flex;
+  justify-content: space-around;
+  padding: .5em;
+
+  .link-container {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 105px;
+    padding: .5em 1em;
+    box-sizing: border-box;
+
+    a {
+      width: 100%;
+
+      input {
+        width: 100%;
+        padding: .25em;
+        font-size: 1.5em;
+      }
+
+    }
+
+  }
+
+  @media screen and (width >= 740px) {
+    height: 170px;
+    box-sizing: border-box;
+
+    width: 30%;
+    margin: 0;
+    flex-wrap: wrap;
+    align-items: center;
+
+    .link-container {
+      position: static;
+      top: auto;
+      padding: 0;
+      box-sizing: content-box;
+      display: flex;
+      justify-content: center;
+
+      a {
+        width: auto;
+
+        input {
+          width: auto;
+          font-size: 1.25em;
+          max-width: 100%;
+          padding: .25em 1em;
+        }
+
+      }
+
+    }
+
+    .icon {
+      margin: 0 .5em;
+    }
+
+  }
+
+}

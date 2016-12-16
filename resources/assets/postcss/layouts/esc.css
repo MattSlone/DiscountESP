@@ -1,0 +1,141 @@
+body section.esc {
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 3em;
+  padding: 1em;
+  flex: 1;
+
+  display: flex;
+  flex-flow: column;
+
+  .main {
+    padding: .75em;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    margin-bottom: 1em;
+
+    .intro {
+      width: 100%;
+      display: block;
+    }
+
+    .features {
+      width: 100%;
+      display: flex;
+      flex-flow: column;
+      padding: 0;
+      margin-bottom: 0;
+
+      li {
+        display: flex;
+        flex-flow: column;
+        padding: 0 .5em;
+        box-sizing: border-box;
+        margin: .25em 0;
+
+        section.header {
+          display: flex;
+          flex-flow: row;
+          align-items: center;
+          justify-content: center;
+
+          i {
+            margin-right: .25em;
+          }
+
+          h3 {
+            margin: 0;
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+  .sidebar {
+
+    .links {
+
+      a {
+        width: 100%;
+      }
+
+      button {
+        cursor: pointer;
+        width: 100%;
+        padding: .5em;
+        margin: .25em 0;
+      }
+
+    }
+
+    .options {
+      margin-bottom: 1em;
+    }
+
+    .links, .options {
+      min-height: 100px;
+      padding: .5em 1em;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+
+      & > span {
+        margin-bottom: .25em;
+      }
+
+      ul {
+        margin: 0;
+        padding: 0;
+
+        li {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+
+      }
+
+    }
+
+  }
+
+  @media screen and (width >= 740px) {
+    margin-top: 2.5em;
+
+    flex-flow: row;
+    align-items: flex-start;
+
+    .main {
+      width: 75%;
+      margin: 0 .5em 0 0;
+
+      .features {
+        flex-flow: row wrap;
+
+        li {
+          flex: 33%;
+
+          section.header {
+            justify-content: flex-start;
+          }
+
+        }
+
+      }
+
+    }
+
+    .sidebar {
+      width: 25%;
+      margin: 0 0 0 .5em;
+    }
+
+  }
+
+}

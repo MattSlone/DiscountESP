@@ -1,0 +1,185 @@
+nav {
+  font-size: 1.7em;
+
+  div {
+
+    & section.top {
+      background-color: black;
+      padding: .25em .5em;
+      border-bottom: 1px solid black;
+
+      .logo_mobile {
+        height: 35px;
+        margin-right: .5em;
+      }
+
+      a {
+        color: white;
+      }
+
+      .burger {
+        padding: .25em;
+        height: 35px;
+        width: 35px;
+
+        span, span:before, span:after {
+          position: absolute;
+          cursor: pointer;
+          border-radius: 1px;
+          height: 5px;
+          width: 35px;
+          background: white;
+          display: block;
+          content: '';
+          transition: all 0.5s ease-in-out;
+        }
+
+        span:before {
+          top: -10px;
+        }
+
+        span {
+          right: .5em;
+          top: 22px;
+        }
+
+        span:after {
+          top: 10px;
+        }
+
+        &.active span {
+          background-color: transparent;
+        }
+
+        &.active span:before, &.active span:after {
+          top: 0;
+        }
+
+        &.active span:before {
+          transform: rotate(45deg);
+        }
+
+        &.active span:after {
+          transform: rotate(-45deg);
+        }
+
+      }
+
+    }
+
+    section.container {
+      overflow-y: hidden;
+  	  max-height: 330px;
+      transition: all 1s ease-out;
+      z-index: 999;
+      background-color: $yellow;
+
+      &.closed {
+        max-height: 0;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+          padding: .25em .5em;
+          border-bottom: 1px solid black;
+          transition: all 0.5s ease;
+
+          a {
+            color: black;
+            text-decoration: none;
+          }
+
+          &:hover {
+            background-color: #C0C0C0;
+          }
+
+          &.active {
+            background-color: #00ff1e;
+            opacity: 0.5;
+          }
+
+          &.active a {
+            color: black;
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+  @media screen and (width >= 740px) {
+    font-size: 2em;
+    background: black;
+
+    div {
+
+      section.top {
+
+      }
+
+      section.container {
+        background: white;
+        overflow-y: auto;
+    	  max-height: none;
+        transition: none;
+        z-index: auto;
+        border-bottom: 2px solid black;
+
+        &.closed {
+          max-height: none;
+        }
+
+        ul {
+          font-size: .58em;
+
+          li {
+            border-bottom: none;
+            transition: none;
+            padding: 0;
+
+            border-right: 2px solid black;
+
+            a {
+              padding: .5em;
+              color: black;
+            }
+
+            &:hover {
+              background-color: black;
+            }
+
+            &:hover > a {
+              color: white;
+            }
+
+            &.active {
+              background-color: none;
+              opacity: auto;
+            }
+
+            &.active a {
+              color: auto;
+            }
+
+            &:last-child {
+              border: none;
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+}

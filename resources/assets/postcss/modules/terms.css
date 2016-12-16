@@ -1,0 +1,63 @@
+body section.terms {
+
+  .instructions, form {
+    padding: .5em;
+    background: white;
+    border-radius: .5em;
+  }
+
+  .instructions {
+    border: .25em solid black;
+
+    h2 {
+      text-decoration: underline;
+    }
+
+  }
+
+  form {
+
+    .field {
+      font-size: 1.5em;
+
+      label {
+        font-size: .75em;
+      }
+
+    }
+
+    & > input {
+      padding: .25em;
+      font-size: 1.25em;
+      background: $yellow;
+    }
+
+    .validation {
+      color: red;
+    }
+
+  }
+
+  @media screen and (width >= 740px) {
+
+    .instructions {
+      box-shadow: 4px 4px 5px 0px rgba(138,138,138,1);
+
+      ol {
+        font-size: 1.25em;
+      }
+
+    }
+
+    form {
+      box-shadow: 4px 4px 5px 0px rgba(138,138,138,1);
+      
+      .field {
+        font-size: 1.25em;
+      }
+
+    }
+
+  }
+
+}

@@ -1,0 +1,108 @@
+body section.confirm {
+  margin-top: 1em;
+  flex: 1;
+
+  .instructions {
+    margin: 1em;
+
+    h2 {
+      margin: 0;
+    }
+
+    ol {
+      padding-left: 1.25em;
+
+      li {
+        padding: .25em 0;
+      }
+
+    }
+
+  }
+
+  section.form {
+    margin: 1em;
+    display: flex;
+    flex-flow: row wrap;
+
+    h2 {
+      padding: 0;
+      width: 100%;
+      margin: 0 0 .25em 0;
+    }
+
+    & > p {
+      width: 100%;
+      padding: .5em 0;
+      margin: 0;
+    }
+
+    & > section {
+      width: 100%;
+      padding: .25em;
+
+      section {
+        width: 100%;
+      }
+
+      h3 {
+        margin: 0;
+      }
+
+      ul {
+        padding: .5em 0;
+        margin: 0;
+      }
+
+    }
+
+    .validation {
+      flex: 100%;
+      padding: .25em;
+    }
+
+  }
+
+  @media screen and (width >= 740px) {
+    margin-top: 2.5em;
+    display: flex;
+    flex-flow: row;
+
+    section.form {
+      width: 75%;
+
+      .field {
+        width: auto;
+
+        /*input, select {
+          width: 215px;
+        }*/
+
+      }
+
+      & > input {
+        max-width: 215px;
+      }
+
+      & > section {
+        display: flex;
+      }
+
+    }
+
+    .instructions {
+      width: 25%;
+
+      ol {
+
+        li {
+
+        }
+
+      }
+
+    }
+
+  }
+
+}

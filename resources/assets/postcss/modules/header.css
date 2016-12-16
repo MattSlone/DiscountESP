@@ -1,0 +1,51 @@
+header {
+  background: white;
+
+  .link-container {
+
+    a {
+
+      input {
+        background: white;
+        color: black;
+      }
+
+    }
+
+  }
+
+  .icon {
+    color: black;
+  }
+
+  @media screen and (width >= 740px) {
+    background: transparent;
+
+    .link-container {
+
+      a {
+
+        input {
+          cursor: pointer;
+          border-radius: 1em;
+        }
+
+      }
+
+    }
+
+    .icon {
+
+      i {
+
+        &.fa {
+          color: white;
+        }
+
+      }
+
+    }
+
+  }
+
+}

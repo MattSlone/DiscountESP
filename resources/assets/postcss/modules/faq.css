@@ -1,0 +1,76 @@
+body section.faq {
+  border-radius: .5em;
+  background: white;
+  border: 2px solid black;
+
+  ul {
+    list-style-type: none;
+
+    li {
+
+      h2 {
+        border: 2px solid black;
+        font-size: 1.1em;
+      }
+
+      div {
+        transition: max-height 1s ease;
+      }
+
+      &:nth-child(odd) {
+
+        h2 {
+          background: $yellow;
+        }
+
+      }
+
+    }
+
+  }
+
+  @media screen and (width >= 740px) {
+
+    ul li:nth-child(odd) {
+
+      h2 {
+        background: none;
+      }
+
+    }
+
+    ul.left {
+
+      li {
+
+        &:nth-child(odd) {
+
+          h2 {
+            background: $yellow;
+          }
+
+        }
+
+      }
+
+    }
+
+    ul.right {
+
+      li {
+
+        &:nth-child(even) {
+
+          h2 {
+            background: $yellow;
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+}

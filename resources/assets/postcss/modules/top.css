@@ -1,0 +1,7 @@
+.very-top {
+
+  @media screen and (width >= 740px) {
+    background: black;
+  }
+
+}

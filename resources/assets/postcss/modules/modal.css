@@ -1,0 +1,36 @@
+body section .modal {
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+
+  .modal-content {
+    background-color: #fefefe;
+    border: 2px solid black;
+    border-radius: .5em;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: fadein;
+    animation-duration: 1s;
+  }
+
+  .modal-header {
+    border-top-left-radius: .5em;
+    border-top-right-radius: .5em;
+    background-color: $yellow;
+  }
+
+  .close {
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  @media screen and (width >= 740px) {
+
+  }
+
+}

@@ -1,0 +1,22 @@
+table {
+  border: 1px solid black;
+  border-spacing: 0;
+  margin-top: 1em;
+}
+
+td {
+  padding: 0 .5em;
+  border: 1px solid black;
+}
+
+h2, h4 {
+  margin: 0;
+}
+
+.center {
+  align: center;
+}
+
+.bold {
+  font-weight: bold;
+}

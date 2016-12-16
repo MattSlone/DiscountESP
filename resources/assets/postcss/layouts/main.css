@@ -1,0 +1,55 @@
+body > section.main {
+  width: 100%;
+  margin-top: 3em;
+  flex: 1;
+
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+
+  .cards {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    .card {
+      margin: 1em;
+      min-height: 200px;
+      border: 2px solid black;
+
+      img {
+        float: left;
+        margin-right: .5em;
+      }
+
+      p {
+        margin: 0;
+      }
+
+    }
+
+  }
+
+  .restrictions {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    text-align: center;
+  }
+
+  @media screen and (width >= 740px) {
+    margin-top: 40px;
+
+    .cards {
+      display: flex;
+      flex-flow: row;
+
+      .card {
+        width: 50%;
+      }
+
+    }
+
+  }
+
+}

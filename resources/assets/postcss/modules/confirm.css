@@ -1,0 +1,67 @@
+body section.confirm {
+
+  .instructions, section.form {
+    padding: .5em;
+    background: white;
+    border-radius: .5em;
+  }
+
+  .instructions {
+    border: .25em solid black;
+
+    h2 {
+      text-decoration: underline;
+    }
+
+  }
+
+  section.form {
+
+    section {
+
+      h3 {
+        font-size: 1.5em;
+      }
+
+      ul {
+        list-style-type: none;
+      }
+
+    }
+
+    button {
+      cursor: pointer;
+      padding: .25em;
+      font-size: 1.25em;
+      background: $yellow;
+    }
+
+    .validation {
+      color: red;
+    }
+
+  }
+
+  @media screen and (width >= 740px) {
+
+    .instructions {
+      box-shadow: 4px 4px 5px 0px rgba(138,138,138,1);
+
+      ol {
+        font-size: 1.25em;
+      }
+
+    }
+
+    section.form {
+      box-shadow: 4px 4px 5px 0px rgba(138,138,138,1);
+
+      .field {
+        font-size: 1.25em;
+      }
+
+    }
+
+  }
+
+}

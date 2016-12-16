@@ -1,0 +1,69 @@
+<% include partials/head-noenroll %>
+<section class="terms">
+  <div class="instructions">
+    <h2>How to Pay</h2>
+    <ol>
+      <li>
+        Choose your terms on this page.
+      </li>
+      <li>
+        Pay via PayPal.
+      </li>
+      <li>
+        Complete the Extended Service Contract with your chosen terms.
+      </li>
+    </ol>
+  </div>
+  <form name="terms" action="/enroll/terms" method="post">
+    <h2>Choose Your Terms</h2>
+    <p class="message">
+      For your vehicle, the following terms are available.
+      When you're ready, click pay. It will take you through a PayPal checkout
+      system. You are able to pay via credit/debit or bank account.
+    </p>
+    <% if(one) { %>
+    <div class="field">
+      <label>Extended Service Contract Term:</label>
+      <select name="extSvcContractTerm">
+        <option value=""></option>
+        <% if(one) { %>
+        <option value="1">1 Additional Year ($<%= (one) ? one : '' %>)</option>
+        <% } %>
+        <% if(two) { %>
+        <option value="2">2 Additional Years ($<%= (two) ? two : '' %>)</option>
+        <% } %>
+        <% if(three) { %>
+        <option value="3">3 Additional Years ($<%= (three) ? three : '' %>)</option>
+        <% } %>
+        <% if(four) { %>
+        <option value="4">4 Additional Years ($<%= (four) ? four : '' %>)</option>
+        <% } %>
+        <% if(five) { %>
+        <option value="5">5 Additional Years ($<%= (five) ? five : '' %>)</option>
+        <% } %>
+      </select>
+    </div>
+    <div class="field">
+      <label>Optional Tire &amp; Wheel Coverage:</label>
+      <select name="optTireWheelCov">
+        <option value=""></option>
+        <option value="3">3 Total Years ($275)</option>
+        <option value="6">6 Total Years ($325)</option>
+        <option value="0">Decline</option>
+      </select>
+    </div>
+    <span class="validation">
+      <%= (data) ? data : '' %>
+      <%= (errors) ? errors : '' %>
+    </span>
+    <input type="hidden" name="token" value="<%= (token) ? token : '' %>">
+    <input type="submit" name="submit" value="Checkout">
+    <% } else { %>
+    <span class="validation">
+      <%= (errors) ? errors : '' %>
+    </span>
+    <% } %>
+  </form>
+</section>
+
+<% include partials/footer %>

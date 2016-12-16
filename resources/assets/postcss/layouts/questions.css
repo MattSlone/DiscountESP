@@ -1,0 +1,111 @@
+body section.questions {
+  margin-top: 4em;
+
+  .instructions {
+    margin: 1em;
+
+    h2 {
+      margin: 0 0 .25em 0;
+    }
+
+    ul {
+      padding: 0;
+    }
+
+  }
+
+  form {
+    margin: 1em;
+    display: flex;
+    flex-flow: row wrap;
+
+    & > div {
+      width: 100%;
+    }
+
+    .field {
+      width: 100%;
+      padding: .25em;
+      display: flex;
+      flex-flow: column;
+      box-sizing: border-box;
+
+      input, select {
+        box-sizing: border-box;
+        width: 100%;
+        height: 30px;
+      }
+
+    }
+
+    & > .field {
+      flex: 70%;
+
+      textarea {
+        height: 100%;
+        padding: .25em;
+      }
+
+    }
+
+    h2 {
+      padding: 0 .25em;
+      width: 100%;
+      margin: 0 0 .25em 0;
+    }
+
+    & > input {
+      flex: 100%;
+      margin: .25em;
+    }
+
+    .validation {
+      flex: 100%;
+      padding: .25em;
+    }
+
+  }
+
+  @media screen and (width >= 740px) {
+    margin-top: 2.5em;
+    display: flex;
+    flex-flow: row;
+
+    form {
+      width: 75%;
+
+      & > div {
+        width: auto;
+      }
+
+      .field {
+        width: auto;
+
+        input, select {
+          width: 215px;
+        }
+
+      }
+
+      & > input {
+        max-width: 215px;
+      }
+
+    }
+
+    .instructions {
+      width: 25%;
+
+      ol {
+
+        li {
+
+        }
+
+      }
+
+    }
+
+  }
+
+}

@@ -1,0 +1,67 @@
+body section.faq {
+  margin: 0 1em;
+  padding: .5em;
+  box-sizing: border-box;
+  flex: 1;
+
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+
+  & > h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-flow: row wrap;
+
+    li {
+      width: 100%;
+      padding: .25em;
+      box-sizing: border-box;
+
+      h2 {
+        margin: 0;
+        padding: .75em .5em;
+      }
+
+      div {
+        max-height: 0;
+        opacity: 0;
+        overflow-y: hidden;
+
+        &.open {
+          opacity: 1;
+          max-height: 300px;
+          border: 2px solid black;
+          border-top: none;
+          padding: .25em .5em;
+        }
+
+        p {
+          margin: 0;
+        }
+
+      }
+
+    }
+
+  }
+
+  @media screen and (width >= 740px) {
+    margin: 0 1em 1em 1em;
+    box-shadow: 4px 4px 5px 0px rgba(138,138,138,1);
+
+    ul {
+      flex: 50%;
+    }
+
+  }
+
+}

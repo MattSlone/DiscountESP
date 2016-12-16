@@ -1,0 +1,61 @@
+body section.enroll {
+
+  .instructions, form {
+    padding: .5em;
+    background: white;
+    border-radius: .5em;
+    border: 2px solid black;
+  }
+
+  .instructions {
+
+    h2 {
+      text-decoration: underline;
+    }
+
+  }
+
+  form {
+
+    .field {
+      font-size: 1.5em;
+
+      label {
+        font-size: .75em;
+      }
+
+    }
+
+    & > input {
+      padding: .25em;
+      font-size: 1.25em;
+      background: $yellow;
+    }
+
+    .validation {
+      color: red;
+    }
+
+  }
+
+  @media screen and (width >= 740px) {
+
+    .instructions {
+
+      ol {
+        font-size: 1.25em;
+      }
+
+    }
+
+    form {
+
+      .field {
+        font-size: 1.25em;
+      }
+
+    }
+
+  }
+
+}

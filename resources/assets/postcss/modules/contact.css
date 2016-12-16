@@ -1,0 +1,6 @@
+.contact {
+  background: $yellow;
+  color: black;
+  text-align: center;
+  border-top: .25em solid black;
+}

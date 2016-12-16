@@ -1,0 +1,31 @@
+@import 'presets.css';
+@import 'normalize.css';
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+html, body {
+    width: 100%;
+    font-size: 14px;
+}
+
+body {
+  background-color: lightgrey;
+  font-family: 'Lato', sans-serif;
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+
+  @media screen and (width >= 740px) {
+      font-size: 16px;
+  }
+
+}
+
+a {
+  text-decoration: none;
+}
+.bold {
+  font-weight: bold;
+}
+.underline {
+  text-decoration: underline;
+}

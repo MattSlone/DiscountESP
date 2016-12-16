@@ -1,0 +1,43 @@
+<% include partials/head-noenroll %>
+<section class="checkout">
+  <div class="instructions">
+    <h2>Confirm Payment</h2>
+    <ol>
+      <li>
+        Please Confirm the amount on this page.
+      </li>
+      <li>
+        Click Pay Now.
+      </li>
+      <li>
+        Sign the Extended Service Contract.
+      </li>
+    </ol>
+  </div>
+  <form name="checkout" action="/enroll/checkout" method="post">
+    <h2>Confirm Payment</h2>
+    <p>Please confirm the terms and cost below, then click Pay Now to complete payment.</p>
+    <section class="info">
+      <section class="info__terms">
+        <h3>Terms</h3>
+        <ul>
+          <li>ESP: <%= (extSvcContractTerm) ? extSvcContractTerm : '' %> years</li>
+          <li> T&amp;W: <%= (optTireWheelCov) ? optTireWheelCov : '' %> years</li>
+        </ul>
+      </section>
+      <section class="cost">
+        <h3>Total Cost</h3>
+        <ul>
+          <li>$<%= (cost) ? cost : '' %></li>
+        </ul>
+      </section>
+    </section>
+    <span class="validation">
+      <%= (errors) ? errors : '' %>
+    </span>
+    <input type="hidden" name="token" value="<%= (token) ? token : '' %>">
+    <input type="submit" name="submit" value="Pay Now">
+  </form>
+</section>
+
+<% include partials/footer %>
